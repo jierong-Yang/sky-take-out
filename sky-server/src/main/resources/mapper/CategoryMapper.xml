@@ -35,7 +35,7 @@
                 update_time = #{updateTime},
             </if>
             <if test="updateUser != null">
-                update_user = #{updateUser}
+                update_user = #{updateUser},  <!-- 添加逗号 -->
             </if>
         </set>
         where id = #{id}

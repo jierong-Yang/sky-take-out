@@ -7,3 +7,8 @@ sky:
     username: root
     password: 1234
 
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id: LTAI5tCWhx9E4pjC28ysYX5j
+    access-key-secret: piMUNG13jqlMq5FednaFkLA0ebw1BM
+    bucket-name: lqloss-sky
