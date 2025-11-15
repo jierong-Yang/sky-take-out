@@ -12,3 +12,9 @@ sky:
     access-key-id: LTAI5tCWhx9E4pjC28ysYX5j
     access-key-secret: piMUNG13jqlMq5FednaFkLA0ebw1BM
     bucket-name: lqloss-sky
+
+  redis:
+    host: localhost
+    port: 6379
+    password: "123456"
+    database: 0

@@ -69,7 +69,6 @@ public class EmployeeServiceImpl implements EmployeeService {
      * 新增员工
      * @param employeeDTO
      */
-    @Override
     public void save(EmployeeDTO employeeDTO) {
 
 
@@ -102,9 +101,11 @@ public class EmployeeServiceImpl implements EmployeeService {
      */
     @Override
     public PageResult pageQuery(EmployeePageQueryDTO employeePageQueryDTO) {
+        //启用插件PageHelper
         PageHelper.startPage(employeePageQueryDTO.getPage(), employeePageQueryDTO.getPageSize());
+        //调用mapper层方法进行分页查询
         Page<Employee> page = employeeMapper.pageQuery(employeePageQueryDTO);
-
+        //封装分页查询结果
         PageResult pageResult = new PageResult(page.getTotal(), page.getResult());
         return pageResult;
     }
